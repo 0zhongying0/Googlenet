@@ -1,0 +1,35 @@
+{
+    "model_name": "VGG19",
+    "flatten": false,
+    "seed": 233,
+    "epochs": 350,
+    "best_acc": 0.2035,
+    "batch_size": 1024,
+    "optimizer_type": "SGD",
+    "optimizer": {
+        "lr": 0.1,
+        "momentum": 0.9,
+        "weight_decay": 0.0005
+    },
+    "lr_decay_epoch": [
+        150,
+        225,
+        300
+    ],
+    "lr_decay_rate": 0.1,
+    "criterion": "CrossEntropyLoss",
+    "trainer": "CNN_trainer",
+    "traditional_methods": false,
+    "method": "vgg",
+    "feature_extracting_method": "skPCA",
+    "resume": false,
+    "test": false,
+    "config_dir": "config",
+    "data_dir": "data",
+    "model_dir": "trained_models",
+    "log_dir": "logs",
+    "output_dir": "outputs",
+    "last_epoch": 5,
+    "cuda": true,
+    "dim": 566
+}
